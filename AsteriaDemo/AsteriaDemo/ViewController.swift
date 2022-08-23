@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         navigationItem.title = "Asteria"
-        navigationItem.rightBarButtonItem = .init(image: .init(systemName: "flame"), style: .plain, target: self, action: #selector(fetchAPOD))
+        navigationItem.rightBarButtonItem = .init(image: .init(systemName: "moon.stars"), style: .plain, target: self, action: #selector(fetchAPOD))
 
         view.addSubview(scrollView)
         scrollView.translatesAutoresizingMaskIntoConstraints = false
