@@ -12,15 +12,15 @@ public struct APOD: Decodable {
         case image, video
     }
 
-    let title: String
-    let explanation: String
-    let url: String
-    let hdurl: String?
-    let date: Date
-    let mediaType: MediaType
-    let thumbnailUrl: String?
-    let copyright: String?
-    let serviceVersion: String?
+    public let title: String
+    public let explanation: String
+    public let url: String
+    public let hdurl: String?
+    public let date: Date
+    public let mediaType: MediaType
+    public let thumbnailUrl: String?
+    public let copyright: String?
+    public let serviceVersion: String?
 
     // let resources: TODO: Add resources
     // let conceptTags TODO: Add concepts
