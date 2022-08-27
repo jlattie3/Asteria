@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct APOD: Decodable {
+public struct APOD: Codable {
     public enum MediaType: String, Codable {
         case image, video
     }
@@ -25,4 +25,16 @@ public struct APOD: Decodable {
     // let resources: TODO: Add resources
     // let conceptTags TODO: Add concepts
     // let concepts: Concepts? TODO: Add concepts
+
+    public init(title: String, explanation: String, url: String, hdurl: String?, date: Date, mediaType: MediaType, thumbnailUrl: String?, copyright: String?, serviceVersion: String?) {
+        self.title = title
+        self.explanation = explanation
+        self.url = url
+        self.hdurl = hdurl
+        self.date = date
+        self.mediaType = mediaType
+        self.thumbnailUrl = thumbnailUrl
+        self.copyright = copyright
+        self.serviceVersion = serviceVersion
+    }
 }
